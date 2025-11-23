@@ -1,0 +1,6 @@
+google-generativeai
+pypdf
+rich
+python-dotenv
+typing_extensions
+mysql-connector-python
