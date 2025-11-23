@@ -1,6 +1,10 @@
 # 🎓 Concierge Study Agent
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+<<<<<<< HEAD
+=======
+![License](https://img.shields.io/badge/License-MIT-green)
+>>>>>>> aba76e7 (Added sample .env file)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 **Your AI-Powered Personal Study Companion.**
@@ -53,7 +57,11 @@ The Concierge Study Agent is a sophisticated CLI tool designed to revolutionize 
 4.  **Configuration**
     Create a `.env` file in the root directory and add your API key:
     ```env
+<<<<<<< HEAD
     GEMINI_API_KEY=your_API_here
+=======
+    GEMINI_API_KEY=your_actual_api_key_here
+>>>>>>> aba76e7 (Added sample .env file)
     ```
 
 ---
@@ -116,6 +124,17 @@ study_agent/
 - This warning appears if your exam date is too close. The agent has reduced the revision buffer to fit all topics.
 
 ---
+<<<<<<< HEAD
 ## Next Steps
 - Shifting from mysql to SQLite
 - Maybe working on a Webpage using Django
+=======
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+>>>>>>> aba76e7 (Added sample .env file)
