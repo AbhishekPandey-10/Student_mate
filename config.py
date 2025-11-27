@@ -22,7 +22,7 @@ MIN_STUDY_DAYS = 1         # Absolute minimum learning window allowed
 # Prompt used for analyzing syllabus content
 SYLLABUS_PROMPT = """
 Analyze the following syllabus text. 
-1. Break it down into logical study topics.
+1. Break it down into logical study topics and really short ones.
 2. Rate difficulty (Easy/Medium/Hard) based on a standard CS curriculum.
 3. Estimate hours needed for a beginner.
 Return valid JSON only using the defined schema.
