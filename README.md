@@ -116,3 +116,6 @@ study_agent/
 ## Next Steps
 - Shifting from mysql to SQLite
 - Maybe working on a Webpage using Django
+- Adding a feture to delete subject
+- Topic Distribution density according to number of days left till exam . 
+  
