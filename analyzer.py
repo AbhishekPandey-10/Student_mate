@@ -61,7 +61,7 @@ def analyze_syllabus(pdf_path: str) -> dict:
     
     # Check for truncation
     if len(raw_text) > 30000:
-        print(f"⚠️ Warning: Syllabus is too long ({len(raw_text)} chars). Truncating the end to save costs.")
+        print(f"⚠️ Warning: Syllabus is too long ({len(raw_text)} chars). Truncating the end to save costs , text limit is 30000 chars.")
         
     clean_text = raw_text[:30000] # Context limit safety
     
@@ -120,6 +120,6 @@ def get_daily_briefing(tasks_list: str) -> str:
         str: A 2-sentence motivational message.
     """
     model = genai.GenerativeModel(MODEL_NAME)
-    prompt = f"I have these tasks: {tasks_list}. Give me a 2-sentence battle plan to motivate me."
+    prompt = f"I have these tasks: {tasks_list}. Give me a 2 sentance on how to effectively complete it , or if there are some insights you can share."
     response = model.generate_content(prompt)
     return response.text
