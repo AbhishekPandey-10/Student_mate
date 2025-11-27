@@ -21,9 +21,7 @@ def clear_screen() -> None:
 def print_banner() -> None:
     """Prints the application banner to the console."""
     clear_screen()
-    banner = """
-StudyMate - Your AI-Powered Study Companion
-    """
+    banner = """StudyMate"""
     console.print(Panel(banner, border_style="cyan"))
 
 def upload_syllabus() -> None:
@@ -73,11 +71,10 @@ def view_dashboard() -> None:
     if not tasks:
         console.print(Panel("[yellow]No tasks pending for today! Enjoy your free time.[/yellow]", title="Status"))
     else:
-        # Motivation
         try:
             task_names = ", ".join([t['name'] for t in tasks]) # 'name' from DB
             briefing = get_daily_briefing(task_names)
-            console.print(Panel(f"[italic]{briefing}[/italic]", title="⚔️ Daily Briefing", border_style="magenta"))
+            console.print(Panel(f"[italic]{briefing}[/italic]", title="Daily Briefing", border_style="magenta"))
         except Exception:
             pass # Skip if API fails
             
