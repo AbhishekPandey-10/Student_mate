@@ -117,5 +117,8 @@ study_agent/
 - Shifting from mysql to SQLite
 - Maybe working on a Webpage using Django
 - Adding a feture to delete subject
-- Topic Distribution density according to number of days left till exam . 
+- Topic Distribution density according to number of days left till exam .
+- Add a GitHub-style "Study Heatmap" to visualize consistency.
+- Visualize the `assigned_date` distribution in a monthly grid.
+- Track consecutive days of `status='done'` to build habits.
   
